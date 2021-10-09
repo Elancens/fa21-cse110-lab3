@@ -1,21 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" href="myCSSfile.css">
     <head>
         <meta charset="UTF-8">
         <title>Bicycle club's first stuff Meeting</title>
         <link rel="icon" href="bike.ico">
     </head>
+    <style>
+        a {
+            display: block;
+        }
 
+        h1 {
+            display:inline-block;
+        }
+
+        @media screen and (min-width: 400px) {
+        body {
+            background-color: lightblue;
+        }
+
+        div *{ 
+            background-color:pink;
+        } 
+        a[target=_1] {
+            background-color:blue;
+        }
+        h1, h2{
+            background-color:red;
+        }
+        div p { 
+            color:yellow;
+        }
+        div>p { 
+            color:green;
+        }  
+        
+        h2 ~ ul {
+            background-color:rgb(10,10,10)
+        }
+
+        div+p { 
+            color:rgb(50,60,150);
+        }  
+
+
+}
+    </style>
     <body>
         <header>
-        
-            <h1>This is for Lab2.</h1>
-            <p>A meeting Minutes</p>
+            
+            <h1 style="color:blue;">This is for Lab2.</h1>
+            <p class ="ten">A meeting Minutes</p>
             <nav>
                 
                 <a href="#Attendance">Attendance</a>
                 <br>
-                <a href="#Evernts-we-hold-in-newt-3-month">Evernts we hold in newt 3 month</a>
+                <a class="one" href="#Evernts-we-hold-in-newt-3-month" target="_1">Evernts we hold in newt 3 month</a>
                 <br>
                 <a href="#Image-about-bike">Image about bike</a>
                 <br>
@@ -28,7 +69,10 @@
         
         </header>
         <main>
-            <h1>Bicycle club's first Meeting</h1>
+            <h1 class="box5">Bicycle club's first Meeting</h1>
+            <div>
+                <p>112233</p>
+            </div>
             <section>   
                 <div style="color:#ff0000">
                 <h2>10/2/2021</h2>
@@ -39,7 +83,7 @@
             <section> 
                 <h2><span>About</span> this metting</h2>
                 
-                <p>First stuff meeting for the new 3 month event of bicycle club.</p>
+                <p class="three">First stuff meeting for the new 3 month event of bicycle club.</p>
             </section>
 
             <section> 
@@ -58,10 +102,10 @@
             <section>
                 <h2 id="Evernts-we-hold-in-newt-3-month">Evernts we hold in newt 3 month</h2>
                 <br>
-                <h3>Recruitment</h3>
-                <p><em>Jame's group in charge of all the general recruitment relevant things, for detial, call him.</em></p>
+                <h3 class="box">Recruitment</h3>
+                <p class="four"><em>Jame's group in charge of all the general recruitment relevant things, for detial, call him.</em></p>
                 <br>
-                <h3>Bike brand selection</h3>
+                <h3 class="box4">Bike brand selection</h3>
                 <ol>
                     <li>Specialized</li>
                     <li>Trek</li>
@@ -71,18 +115,19 @@
                     <li>Cervelo</li>
                 </ol>
                 <br>
-                <h3>First time ride arond campus</h3>
-                <p>Tom's group in charge of all the riding relevant things, for detial, call him.<br>
+                <h3 class="box2">First time ride arond campus</h3>
+                <p class="two">Tom's group in charge of all the riding relevant things, for detial, call him.<br>
                 <strong>Safty is the most important thing!</strong>
                 </p>
                 <br>
                 <h3>Race team recruitment</h3>
-                <p><i>Let them do the survey first!</i><br>
+                <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+                <p class="five"><i>Let them do the survey first!</i><br>
                 Issac is the leader of the race team, for detial, call him.
                 </p>
                 <details>
                     <summary>Powered by Cycling club</summary>
-                    <p>Travis will maintian the web page.</p>
+                    <p class="box3">Travis will maintian the web page.</p>
                 </details>
             </section>
 
@@ -114,7 +159,7 @@
             <section>
                 <h2>Forms</h2>
                 <p>form</p>
-                <form action="form_action.asp" method="get">
+                <form>
                     <p>First name: <input type="text" name="firstname" /></p>
                     <p>Last name: <input type="text" name="lastname" /></p>
                     
@@ -148,15 +193,15 @@
                     <option value="Merida">Merida</option>
                 </select>
                 <hr>
-                <p>option inside other forms</p>
+                <p class="container1">option inside other forms</p>
                 <hr>
-                <p>button</p>
+                <p class="container2">button</p>
                 <button type="button">Click it!</button>
             </section>
 
             <footer>
                 <hr>
-                <p>Posted by Zifeng Zhang</p>
+                <p style="padding: 10px 10 px 10 px 15 px">Posted by Zifeng Zhang</p>
             </footer>
         </main>
     </body>
