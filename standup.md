@@ -1,5 +1,10 @@
+Choose meeting time for everyone.
+
 What did I work on yesterday?
 
-What am I working on today?
 
-What issues are blocking me?
+What issues are bother me?
+ 
+ 
+What we will talk about in next meeting?
+
